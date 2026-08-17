@@ -587,6 +587,9 @@ The system evaluates conditions based on a strict numbered priority list:
 ### 💻 Modular C++ Source Code in VS Code
 ![Source Code Screenshot](screenshots/15_source_code.png)
 
+### 🌐 GitHub Repository Homepage Preview
+![GitHub Repository](screenshots/17_github_repository.png)
+
 ---
 
 ## 📁 Project Directory Structure
@@ -626,7 +629,7 @@ Smart-Home-Controller/
 │   ├── project_report.md       # Complete academic project report (23 sections)
 │   └── test_report.md          # Detailed test execution report with results
 ├── screenshots/                # Wokwi simulation evidence and screenshot proof
-│   └── README.md               # 16-item screenshot checklist with filenames
+│   └── README.md               # 17-item screenshot checklist with filenames
 ├── simulation/                 # Virtual simulation guide and scenario files
 │   ├── README.md               # Step-by-step Wokwi execution guide (17 steps)
 │   └── test_scenarios.md       # 8 comprehensive simulation test scenarios

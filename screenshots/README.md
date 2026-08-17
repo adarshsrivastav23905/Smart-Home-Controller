@@ -21,8 +21,8 @@ This directory contains visual evidence of the Smart Home Controller project's f
 | 13 | OLED Intruder Alert Display | `13_oled_intruder_alert.png` | Alert message on display | ⬜ |
 | 14 | Critical Temperature Alert | `14_critical_temp_alert.png` | 45°C alert message | ⬜ |
 | 15 | Source Code in VS Code | `15_source_code.png` | Modular code structure | ⬜ |
-| 16 | GitHub Repository Page | `16_github_repository.png` | Professional repo with README | ⬜ |
-| 17 | Project Directory Structure | `17_project_structure.png` | Complete folder organization | ⬜ |
+| 16 | Project Directory Structure | `16_project_structure.png` | Complete folder organization | ⬜ |
+| 17 | GitHub Repository Page | `17_github_repository.png` | Professional repo with README | ⬜ |
 
 ### How to Capture Screenshots
 - **Wokwi:** Use browser screenshot or the Windows Snipping Tool (Win + Shift + S). Ensure the simulation is running and the desired state is visible.
