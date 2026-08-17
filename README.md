@@ -540,7 +540,7 @@ The system evaluates conditions based on a strict numbered priority list:
 ## 📸 Project Screenshots
 
 ### 📁 Project Directory Structure
-![Project Structure](screenshots/18_project_structure.png)
+![Project Structure](screenshots/16_project_structure.png)
 
 ### 🔧 Complete Wokwi Circuit Wiring Diagram
 ![Complete Wokwi Circuit](screenshots/01_complete_wokwi_circuit.png)
@@ -581,17 +581,11 @@ The system evaluates conditions based on a strict numbered priority list:
 ### ⚠️ OLED Intruder Alert Display
 ![OLED Intruder Alert](screenshots/13_oled_intruder_alert.png)
 
-### 📊 Serial Monitor Telemetry Output (115200 Baud)
-![Serial Monitor Output](screenshots/14_serial_monitor.png)
-
 ### 🔥 Critical Temperature Alert (≥ 45°C)
-![Critical Temperature](screenshots/15_critical_temp_alert.png)
+![Critical Temperature](screenshots/14_critical_temp_alert.png)
 
 ### 💻 Modular C++ Source Code in VS Code
-![Source Code Screenshot](screenshots/16_source_code.png)
-
-### 🌐 GitHub Repository Homepage Preview
-![GitHub Repository](screenshots/17_github_repository.png)
+![Source Code Screenshot](screenshots/15_source_code.png)
 
 ---
 
@@ -599,8 +593,6 @@ The system evaluates conditions based on a strict numbered priority list:
 
 ```text
 Smart-Home-Controller/
-├── .github/                    # GitHub repository configuration
-│   └── README.md               # GitHub directory description
 ├── .vscode/                    # VS Code workspace settings and IntelliSense
 ├── arduino_code/               # Standalone monolithic Arduino sketch
 │   └── smart_home_controller.ino  # Single-file code for Arduino IDE (with OLED)
@@ -634,7 +626,7 @@ Smart-Home-Controller/
 │   ├── project_report.md       # Complete academic project report (23 sections)
 │   └── test_report.md          # Detailed test execution report with results
 ├── screenshots/                # Wokwi simulation evidence and screenshot proof
-│   └── README.md               # 18-item screenshot checklist with filenames
+│   └── README.md               # 16-item screenshot checklist with filenames
 ├── simulation/                 # Virtual simulation guide and scenario files
 │   ├── README.md               # Step-by-step Wokwi execution guide (17 steps)
 │   └── test_scenarios.md       # 8 comprehensive simulation test scenarios
