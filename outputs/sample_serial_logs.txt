@@ -1,0 +1,25 @@
+==========================================================
+  SMART HOME CONTROLLER - EMBEDDED SYSTEM PLATFORM
+  Architecture: ESP32 DevKit V4 / Arduino Framework
+  Subsystems: PIR + LDR + DHT22 + OLED + Manual Override
+  Author: Adarsh Srivastav
+==========================================================
+[SYS] System Initialized Successfully. Running main loop...
+
+[INIT] Sensors initialized (PIR=GPIO27, LDR=GPIO34, DHT22=GPIO4)
+[INIT] Light controller initialized (LED=GPIO25)
+[INIT] Fan controller initialized (LED=GPIO26)
+[INIT] Security manager initialized (Buzzer=GPIO14, Red=GPIO12, Green=GPIO13)
+[INIT] Manual override switches initialized
+[INIT] OLED Display initialized (SDA=GPIO21, SCL=GPIO22)
+
+[SYS] *** All subsystems ready. Entering main control loop... ***
+
+[TELEMETRY] Temp: 25.0 C | Humidity: 50.0% | LDR: 2500 (BRIGHT) | Motion: NO | Light: OFF | Fan: OFF | Mode: AUTO | Security: DISABLED
+[TELEMETRY] Temp: 25.0 C | Humidity: 50.0% | LDR: 800 (DARK) | Motion: YES | Light: ON | Fan: OFF | Mode: AUTO | Security: DISABLED
+[TELEMETRY] Temp: 31.5 C | Humidity: 55.0% | LDR: 800 (DARK) | Motion: YES | Light: ON | Fan: ON | Mode: AUTO | Security: DISABLED
+[TELEMETRY] Temp: 31.5 C | Humidity: 55.0% | LDR: 800 (DARK) | Motion: YES | Light: ON | Fan: ON | Mode: MANUAL | Security: DISABLED
+[ALERT] !!! INTRUDER DETECTED !!! Security alarm active.
+[TELEMETRY] Temp: 31.5 C | Humidity: 55.0% | LDR: 800 (DARK) | Motion: YES | Light: ON | Fan: OFF | Mode: AUTO | Security: !! ALERT !!
+[ALERT] CRITICAL TEMPERATURE DETECTED! Temp >= 45°C
+[TELEMETRY] Temp: 46.0 C | Humidity: 40.0% | LDR: 2500 (BRIGHT) | Motion: NO | Light: OFF | Fan: ON | Mode: AUTO | Security: DISABLED

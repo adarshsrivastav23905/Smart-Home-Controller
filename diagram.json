@@ -1,0 +1,192 @@
+{
+  "version": 1,
+  "author": "Adarsh Srivastav",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": 0,
+      "left": 200,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-pir-motion-sensor",
+      "id": "pir1",
+      "top": -150,
+      "left": 50,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-photoresistor-sensor",
+      "id": "ldr1",
+      "top": -150,
+      "left": 180,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": -150,
+      "left": 300,
+      "attrs": {}
+    },
+    {
+      "type": "board-ssd1306",
+      "id": "oled1",
+      "top": 200,
+      "left": 450,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led-light",
+      "top": 200,
+      "left": 50,
+      "attrs": { "color": "yellow", "label": "Room Light" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led-fan",
+      "top": 200,
+      "left": 130,
+      "attrs": { "color": "cyan", "label": "Fan" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led-red",
+      "top": 200,
+      "left": 210,
+      "attrs": { "color": "red", "label": "Alert" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led-green",
+      "top": 200,
+      "left": 290,
+      "attrs": { "color": "green", "label": "Status" }
+    },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": 200,
+      "left": 370,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r-light",
+      "top": 170,
+      "left": 50,
+      "attrs": { "value": "330" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r-fan",
+      "top": 170,
+      "left": 130,
+      "attrs": { "value": "330" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r-red",
+      "top": 170,
+      "left": 210,
+      "attrs": { "value": "330" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r-green",
+      "top": 170,
+      "left": 290,
+      "attrs": { "value": "330" }
+    },
+
+    {
+      "type": "wokwi-resistor",
+      "id": "r-buzzer",
+      "top": 170,
+      "left": 370,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn-override",
+      "top": 300,
+      "left": 50,
+      "attrs": { "color": "orange", "label": "Manual Override" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn-light",
+      "top": 300,
+      "left": 160,
+      "attrs": { "color": "yellow", "label": "Light Switch" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn-fan",
+      "top": 300,
+      "left": 270,
+      "attrs": { "color": "blue", "label": "Fan Switch" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn-security",
+      "top": 300,
+      "left": 380,
+      "attrs": { "color": "red", "label": "Security Mode" }
+    },
+
+  ],
+  "connections": [
+    ["pir1:VCC", "esp:5V", "red", ["v0"]],
+    ["pir1:GND", "esp:GND.2", "black", ["v0"]],
+    ["pir1:OUT", "esp:27", "green", ["v0"]],
+
+    ["ldr1:VCC", "esp:3V3", "red", ["v0"]],
+    ["ldr1:GND", "esp:GND.2", "black", ["v0"]],
+    ["ldr1:AO", "esp:34", "orange", ["v0"]],
+
+    ["dht1:VCC", "esp:3V3", "red", ["v0"]],
+    ["dht1:GND", "esp:GND.2", "black", ["v0"]],
+    ["dht1:SDA", "esp:4", "green", ["v0"]],
+
+    ["oled1:GND", "esp:GND.1", "black", ["v0"]],
+    ["oled1:VCC", "esp:3V3", "red", ["v0"]],
+    ["oled1:SCL", "esp:22", "purple", ["v0"]],
+    ["oled1:SDA", "esp:21", "blue", ["v0"]],
+
+    ["esp:25", "r-light:1", "yellow", ["v0"]],
+    ["r-light:2", "led-light:A", "yellow", ["v0"]],
+    ["led-light:C", "esp:GND.1", "black", ["v0"]],
+
+    ["esp:26", "r-fan:1", "cyan", ["v0"]],
+    ["r-fan:2", "led-fan:A", "cyan", ["v0"]],
+    ["led-fan:C", "esp:GND.1", "black", ["v0"]],
+
+    ["esp:12", "r-red:1", "red", ["v0"]],
+    ["r-red:2", "led-red:A", "red", ["v0"]],
+    ["led-red:C", "esp:GND.1", "black", ["v0"]],
+
+    ["esp:13", "r-green:1", "green", ["v0"]],
+    ["r-green:2", "led-green:A", "green", ["v0"]],
+    ["led-green:C", "esp:GND.1", "black", ["v0"]],
+
+    ["esp:14", "r-buzzer:1", "orange", ["v0"]],
+    ["r-buzzer:2", "bz1:1", "orange", ["v0"]],
+    ["bz1:2", "esp:GND.1", "black", ["v0"]],
+
+    ["btn-override:1.l", "esp:19", "orange", ["v0"]],
+    ["btn-override:2.l", "esp:GND.2", "black", ["v0"]],
+
+    ["btn-light:1.l", "esp:32", "yellow", ["v0"]],
+    ["btn-light:2.l", "esp:GND.2", "black", ["v0"]],
+
+    ["btn-fan:1.l", "esp:33", "cyan", ["v0"]],
+    ["btn-fan:2.l", "esp:GND.2", "black", ["v0"]],
+
+    ["btn-security:1.l", "esp:18", "red", ["v0"]],
+    ["btn-security:2.l", "esp:GND.2", "black", ["v0"]]
+  ]
+}
