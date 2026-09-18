@@ -2,9 +2,9 @@
 
 > A comprehensive, multi-sensor embedded home automation controller built with **ESP32 DevKit V4 / Embedded C++** that automatically controls room lighting based on motion detection + ambient light level, regulates fan cooling via temperature-threshold hysteresis ($30.0°C$ ON / $28.0°C$ OFF), implements a 3-state latching security alarm system with pulsating buzzer, provides manual override via debounced push-button switches with priority-based control hierarchy, and displays real-time telemetry on a 128×64 SSD1306 I2C OLED display.
 
----
+---   
 
-## 👨‍💻 Author
+## 👨‍💻 Author   
 
 **Adarsh Srivastav**  
 Computer Science and Engineering (CSE) Student  
